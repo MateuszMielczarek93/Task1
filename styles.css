@@ -8,9 +8,23 @@ width: 300px;
 margin-left: 180px;
 margin-top: 15px;
 }
-#MyModal{
-display: none;
-position: fixed;
+#MyModalW{
+height: 200px;
+width: 200px;
 z-index: 1;
-background-color: red;
+background-color: white;
+border-style: solid;
+border-radius: 15px;
+border-color: white;
+}
+#CloseButton{
+
+margin-top: 10%;
+margin-left: 40%;
+margin-right: auto;
+}
+
+#Text{
+  margin-top: 40%;
+   text-align: center;
 }
