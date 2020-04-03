@@ -3,16 +3,18 @@ function MyFunction(){
     var ModalHide = document.getElementById("MyModalW");
     var Close = document.getElementById("CloseButton");
     var InputName = document.getElementById("InputBox");
-    var Values = document.getElementById("InputBox").value
+    
     
     InputName.addEventListener("keyup", function(event) {
      if (event.keyCode ===13) {
          document.getElementById("SendButton").click();
+         var Values = document.getElementById("InputBox").value
          document.getElementById("NameOut").innerHTML = Values;
     }});
 
     BtnClick.onclick = function(){
         ModalHide.style.display = "block";
+        var Values = document.getElementById("InputBox").value
         document.getElementById("NameOut").innerHTML = Values;
     }
 
