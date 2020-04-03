@@ -1,30 +1,52 @@
+body{
+background-color: gray;
+}
+
 #NameInput{
   margin-left: auto;
   margin-right: auto;
   width: 30%;
 }
+
 #SendButton{
 width: 300px;
 margin-left: 180px;
 margin-top: 15px;
 }
+
 #MyModalW{
-height: 200px;
-width: 200px;
+height: 180px;
+width: 180px;
 z-index: 1;
 background-color: white;
 border-style: solid;
 border-radius: 15px;
 border-color: white;
-}
-#CloseButton{
+display: none;
+position: absolute;
+left: 50%;
+right: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
 
+}
+
+#CloseButton{
 margin-top: 10%;
 margin-left: 40%;
 margin-right: auto;
+background-color: green;
+color: white;
 }
 
 #Text{
-  margin-top: 40%;
-   text-align: center;
+margin-top: 40%;
+text-align: center;
 }
+
+#NameOut{
+
+text-align: center;
+
+}
+

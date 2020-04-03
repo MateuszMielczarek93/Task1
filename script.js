@@ -1,28 +1,24 @@
 function MyFunction(){
     var BtnClick = document.getElementById("SendButton");
-    BtnClick.onclick = ShowAlert;
-};
+    var ModalHide = document.getElementById("MyModalW");
+    var Close = document.getElementById("CloseButton");
+    var InputName = document.getElementById("InputBox");
+    var Values = document.getElementById("InputBox").value
+    
+    InputName.addEventListener("keyup", function(event) {
+     if (event.keyCode ===13) {
+         document.getElementById("SendButton").click();
+         document.getElementById("NameOut").innerHTML = Values;
+    }});
 
-function ShowAlert(){
-alert("bhrawulki");
-}
+    BtnClick.onclick = function(){
+        ModalHide.style.display = "block";
+        document.getElementById("NameOut").innerHTML = Values;
+    }
 
+    Close.onclick = function(){
+        ModalHide.style.display = "none";
+    }
 
-function MyInput(){
-    var BoxIn = document.getElementById("InputBox");
-    BoxIn.onclick = showAlert;
-};
-
-function ShowInput(){
-alert("bhrawulki");
-}
-
-
-function MyClose(){
-    var BtnClose = document.getElementById("ICloseButton");
-    BtnClose.onclick = showAlert;
-};
-
-function ShowInput(){
-alert("bhrawulki");
-}
+    
+ };
